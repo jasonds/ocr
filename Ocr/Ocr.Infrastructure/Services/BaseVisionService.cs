@@ -7,12 +7,12 @@ namespace Ocr.Infrastructure.Services
 {
     public class BaseVisionService
     {
-        private readonly IConfigurationRoot _configurationService;
+        private readonly IConfiguration _configurationService;
 
         protected readonly string _apiKey;
         protected readonly string _uriBase;
 
-        public BaseVisionService(IConfigurationRoot configurationService)
+        public BaseVisionService(IConfiguration configurationService)
         {
             if (configurationService == null) throw new ArgumentNullException(nameof(configurationService));
             _configurationService = configurationService;

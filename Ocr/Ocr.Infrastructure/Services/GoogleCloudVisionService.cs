@@ -12,7 +12,7 @@ namespace Ocr.Infrastructure.Services
 {
     public class GoogleCloudVisionService : BaseVisionService, IVisionService
     {
-        public GoogleCloudVisionService(IConfigurationRoot configurationService)
+        public GoogleCloudVisionService(IConfiguration configurationService)
             : base(configurationService)
         {
         }

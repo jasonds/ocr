@@ -30,7 +30,7 @@ namespace Ocr.App
 
             // Configure dependency injection
             var serviceProvider = new ServiceCollection()
-                .AddSingleton(configuration)
+                .AddSingleton<IConfiguration>(configuration)
                 //.AddScoped<IVisionService, AzureComputerVisionService>()
                 .AddScoped<IVisionService, GoogleCloudVisionService>()
                 .BuildServiceProvider();

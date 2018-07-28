@@ -10,7 +10,7 @@ namespace Ocr.Infrastructure.Services
 {
     public class AzureComputerVisionService : BaseVisionService, IVisionService
     {
-        public AzureComputerVisionService(IConfigurationRoot configurationService)
+        public AzureComputerVisionService(IConfiguration configurationService)
             : base(configurationService)
         {
         }
