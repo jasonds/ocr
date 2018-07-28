@@ -18,7 +18,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ocr.Core\Ocr.Core.csproj" />
+    <ProjectReference Include="..\Ocr.Infrastructure\Ocr.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

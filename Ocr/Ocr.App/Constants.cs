@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ocr.App
+﻿namespace Ocr.App
 {
     public static class Constants
     {
